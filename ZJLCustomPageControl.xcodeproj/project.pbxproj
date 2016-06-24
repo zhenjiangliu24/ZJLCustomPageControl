@@ -16,6 +16,8 @@
 		CA48FB9F1D1CC3FC00EC4CF6 /* ZJLCustomPageControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA48FB9E1D1CC3FC00EC4CF6 /* ZJLCustomPageControlTests.m */; };
 		CA48FBAA1D1CC3FC00EC4CF6 /* ZJLCustomPageControlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA48FBA91D1CC3FC00EC4CF6 /* ZJLCustomPageControlUITests.m */; };
 		CA48FBBA1D1CC44F00EC4CF6 /* ZJLPageControlBackgroundLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CA48FBB91D1CC44F00EC4CF6 /* ZJLPageControlBackgroundLayer.m */; };
+		CAFE7A711D1D81ED00D5991F /* ZJLCircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFE7A701D1D81ED00D5991F /* ZJLCircleLayer.m */; };
+		CAFE7A741D1DDF9E00D5991F /* ZJLCustomPageControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = CAFE7A731D1DDF9E00D5991F /* ZJLCustomPageControlView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,10 @@
 		CA48FBAB1D1CC3FC00EC4CF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA48FBB81D1CC44F00EC4CF6 /* ZJLPageControlBackgroundLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZJLPageControlBackgroundLayer.h; path = ZJLCustomPageControlView/ZJLPageControlBackgroundLayer.h; sourceTree = "<group>"; };
 		CA48FBB91D1CC44F00EC4CF6 /* ZJLPageControlBackgroundLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZJLPageControlBackgroundLayer.m; path = ZJLCustomPageControlView/ZJLPageControlBackgroundLayer.m; sourceTree = "<group>"; };
+		CAFE7A6F1D1D81ED00D5991F /* ZJLCircleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZJLCircleLayer.h; path = ZJLCustomPageControlView/ZJLCircleLayer.h; sourceTree = "<group>"; };
+		CAFE7A701D1D81ED00D5991F /* ZJLCircleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZJLCircleLayer.m; path = ZJLCustomPageControlView/ZJLCircleLayer.m; sourceTree = "<group>"; };
+		CAFE7A721D1DDF9E00D5991F /* ZJLCustomPageControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZJLCustomPageControlView.h; path = ZJLCustomPageControlView/ZJLCustomPageControlView.h; sourceTree = "<group>"; };
+		CAFE7A731D1DDF9E00D5991F /* ZJLCustomPageControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZJLCustomPageControlView.m; path = ZJLCustomPageControlView/ZJLCustomPageControlView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,10 @@
 			children = (
 				CA48FBB81D1CC44F00EC4CF6 /* ZJLPageControlBackgroundLayer.h */,
 				CA48FBB91D1CC44F00EC4CF6 /* ZJLPageControlBackgroundLayer.m */,
+				CAFE7A6F1D1D81ED00D5991F /* ZJLCircleLayer.h */,
+				CAFE7A701D1D81ED00D5991F /* ZJLCircleLayer.m */,
+				CAFE7A721D1DDF9E00D5991F /* ZJLCustomPageControlView.h */,
+				CAFE7A731D1DDF9E00D5991F /* ZJLCustomPageControlView.m */,
 			);
 			name = ZJLCustomPageControlView;
 			sourceTree = "<group>";
@@ -290,6 +300,8 @@
 				CA48FBBA1D1CC44F00EC4CF6 /* ZJLPageControlBackgroundLayer.m in Sources */,
 				CA48FB891D1CC3FC00EC4CF6 /* AppDelegate.m in Sources */,
 				CA48FB861D1CC3FC00EC4CF6 /* main.m in Sources */,
+				CAFE7A711D1D81ED00D5991F /* ZJLCircleLayer.m in Sources */,
+				CAFE7A741D1DDF9E00D5991F /* ZJLCustomPageControlView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +527,7 @@
 				CA48FBB01D1CC3FC00EC4CF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA48FBB11D1CC3FC00EC4CF6 /* Build configuration list for PBXNativeTarget "ZJLCustomPageControlTests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +536,7 @@
 				CA48FBB31D1CC3FC00EC4CF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA48FBB41D1CC3FC00EC4CF6 /* Build configuration list for PBXNativeTarget "ZJLCustomPageControlUITests" */ = {
 			isa = XCConfigurationList;
@@ -531,6 +545,7 @@
 				CA48FBB61D1CC3FC00EC4CF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

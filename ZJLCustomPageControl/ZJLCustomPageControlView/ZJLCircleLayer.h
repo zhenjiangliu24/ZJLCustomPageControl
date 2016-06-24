@@ -1,18 +1,20 @@
 //
-//  ZJLPageControlBackgroundLayer.h
+//  ZJLCircleLayer.h
 //  ZJLCustomPageControl
 //
-//  Created by ZhongZhongzhong on 16/6/23.
+//  Created by ZhongZhongzhong on 16/6/24.
 //  Copyright © 2016年 ZhongZhongzhong. All rights reserved.
 //
 
 #import <QuartzCore/QuartzCore.h>
 #import <UIKit/UIKit.h>
 
-@interface ZJLPageControlBackgroundLayer : CALayer
+@interface ZJLCircleLayer : CALayer
 @property (nonatomic, assign) NSInteger numberOfPages;
 @property (nonatomic, assign) NSInteger currentPage;
-@property (nonatomic, assign) CGFloat circleDiameter;
 @property (nonatomic, strong) UIColor *circleColor;
-@property (nonatomic, strong) UIScrollView *bindingView;
+@property (nonatomic, assign) CGFloat offset_x;
+@property (nonatomic, assign) CGFloat preOffset_x;
+@property (nonatomic, assign) CGFloat bindingViewWidth;
+- (instancetype)initWithFrame:(CGRect)frame;
 @end

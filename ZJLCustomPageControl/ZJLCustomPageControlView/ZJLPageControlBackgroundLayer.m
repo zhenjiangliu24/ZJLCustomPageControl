@@ -8,7 +8,7 @@
 
 #import "ZJLPageControlBackgroundLayer.h"
 static const NSInteger defaultNumberOfPages = 3;
-static const NSInteger defaultCurrentPage = 0;
+static const NSInteger defaultCurrentPage = 1;
 static const CGFloat defaultCircleDiameter = 10.0;
 #define DefaultCircleColor [UIColor lightGrayColor]
 
@@ -33,11 +33,11 @@ static const CGFloat defaultCircleDiameter = 10.0;
 - (void)setCurrentPage:(NSInteger)currentPage
 {
     _currentPage = currentPage;
-    if(_currentPage<0){
-        _currentPage = 0;
+    if(_currentPage<=0){
+        _currentPage = 1;
     }
-    if(_currentPage>_numberOfPages-1){
-        _currentPage = _numberOfPages-1;
+    if(_currentPage>_numberOfPages){
+        _currentPage = _numberOfPages;
     }
     [self setNeedsDisplay];
 }
@@ -47,7 +47,7 @@ static const CGFloat defaultCircleDiameter = 10.0;
     CGMutablePathRef linePath = CGPathCreateMutable();
     CGFloat circleDistance = self.frame.size.width/(self.numberOfPages+1);
     for (int i = 0; i<_numberOfPages; i++) {
-        if (i==_currentPage) {
+        if (i==_currentPage-1) {
             continue;
         }
         CGPathAddEllipseInRect(linePath, NULL, CGRectMake((i+1)*circleDistance-self.circleDiameter*0.5, (self.frame.size.height-self.circleDiameter)*0.5, self.circleDiameter, self.circleDiameter));
